@@ -33,7 +33,7 @@ pipeline {
                               baseDir: '/var/jenkins_home/workspace/Rational-Pipeline/',
                               fileIncludePatterns: '*',
                               fileExcludePatterns: '.*',
-                              pushProperties: 'jenkins.server=Local\njenkins.reviewed=false',
+                              //pushProperties: 'jenkins.server=Local\njenkins.reviewed=false',
                               pushDescription: 'Pushed from Jenkins',
                               pushIncremental: false
                           ],
