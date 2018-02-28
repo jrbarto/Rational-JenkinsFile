@@ -40,12 +40,12 @@ pipeline {
                   ],
                   deploy: [
                       $class: 'com.urbancode.jenkins.plugins.ucdeploy.DeployHelper$DeployBlock',
-                      deployApp: 'JenkinsApplication',
-                      deployEnv: 'TestJenkinsEnvironment',
-                      deployProc: 'TestJenkinsEnvironmentProcess',
+                      deployApp: 'Jenkins-APP',
+                      deployEnv: 'Jenkins-ENV',
+                      deployProc: 'Deploy Jenkins',
                       createProcess: [
                           $class: 'com.urbancode.jenkins.plugins.ucdeploy.ProcessHelper$CreateProcessBlock',
-                          processComponent: 'TestJenkinsEnvironmentProcess'
+                          processComponent: 'Wait'
                       ],
                       deployVersions: 'Jenkins:${BUILD_NUMBER}',
                       deployOnlyChanged: false
