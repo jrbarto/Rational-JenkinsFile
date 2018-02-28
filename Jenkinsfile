@@ -30,7 +30,7 @@ pipeline {
                           delivery: [
                               $class: 'com.urbancode.jenkins.plugins.ucdeploy.DeliveryHelper$Push',
                               pushVersion: '${BUILD_NUMBER}',
-                              baseDir: '/var/jenkins_home/workspace/tMultibranchPipeline_master-DBIPVKXZ7QNG5SHFYNIO7N4UIDI7SDDUPBFJTAUCIMBJIT3NNLEA/',
+                              baseDir: '/var/jenkins_home/workspace/Rational-Pipeline/',
                               fileIncludePatterns: '*',
                               fileExcludePatterns: '.*',
                               pushProperties: 'jenkins.server=Local\njenkins.reviewed=false',
